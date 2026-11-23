@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lean2markdown"
+version = "1.0.0"
+description = "Convert Lean 4 source code into mathematically accurate Markdown, HTML, and LaTeX documentation."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+keywords = ["lean4", "markdown", "latex", "formal-verification", "mathematics", "documentation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Programming Language :: Python :: 3",
+]
+
+[project.scripts]
+lean2md = "lean2markdown.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["lean2markdown*"]
