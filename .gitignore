@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+.pytest_cache/
+
+# Lean / Lake build artifacts
+lean_bridge/.lake/
+lean_bridge/build/
+
+# macOS / IDE
+.DS_Store
+.vscode/
+.idea/
+*.swp
